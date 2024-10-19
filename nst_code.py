@@ -7,7 +7,7 @@ from tensorflow.keras.models import Model
 import matplotlib.pyplot as plt
 
 # Define the directory for saving results
-output_dir ="C:\\Users\\saran\\OneDrive\\Desktop\\Neural Style Transfer\\Result Images"
+output_dir ="folder path"
 
 # Ensure the directory exists
 if not os.path.exists(output_dir):
@@ -83,8 +83,8 @@ def compute_loss(model, loss_weights, init_image, gram_style_features, content_f
     return total_loss
 
 # Load and process the content and style images
-content_image_path = "C:\\Users\\saran\\OneDrive\\Documents\\cityscape_con.jpg"
-style_image_path = "C:\\Users\\saran\\OneDrive\\Documents\\starry night.jpeg"
+content_image_path = "image path"
+style_image_path = "image path"
 
 target_size = (400, 400)  # Image size
 content_image = preprocess_image(content_image_path, target_size)
